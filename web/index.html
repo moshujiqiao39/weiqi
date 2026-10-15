@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>弈 · 围棋对局</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="brand">
+        <div class="seal">弈</div>
+        <div>
+          <h1>围棋对局</h1>
+          <p>中国规则 · 贴目 7.5 · 黑先</p>
+        </div>
+      </div>
+      <nav>
+        <button type="button" data-view="play" class="on">对局</button>
+        <button type="button" data-view="life">死活</button>
+        <button type="button" data-view="tesuji">手筋</button>
+        <button type="button" data-view="train">训练</button>
+      </nav>
+      <div id="engine" class="engine">正在查看引擎</div>
+    </header>
+    <main>
+      <section class="stage">
+        <div class="frame">
+          <canvas id="board" aria-label="棋盘"></canvas>
+        </div>
+        <p id="banner" class="banner">选段位，开始一盘。</p>
+      </section>
+      <aside id="panel"></aside>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
